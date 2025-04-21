@@ -56,6 +56,26 @@ This is how you log into your Linux server. Once connected, you can install Jenk
 **What I Did:**  
 Once logged into the instance, I ran the following commands:
 
-1. Updated the system:
 ```bash
+# Update the system
 sudo yum update -y
+
+# Install Java
+sudo amazon-linux-extras install java-openjdk11 -y
+
+# Add the Jenkins repo
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+# Install Jenkins
+sudo yum install jenkins -y
+
+# Enable and start Jenkins service
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
+
+## Step 5: Access Jenkins via Web Browser
+
+**What I Did:**  
+In my browser, I visited:
+
