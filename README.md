@@ -73,9 +73,16 @@ sudo yum install jenkins -y
 # Enable and start Jenkins service
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
+```
 
 ## Step 5: Access Jenkins via Web Browser
 
 **What I Did:**  
 In my browser, I visited:
+```bash
+http://<EC2-Public-IP>:8080
+```
+This opened the Jenkins setup screen. I retrieved the admin password using this command:
 
+```bash
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
