@@ -1,5 +1,4 @@
-# Deploying Jenkins on an Amazon EC2 Instance (Beginner-Friendly Walkthrough)
-
+# Deploying Jenkins on an Amazon EC2 Instance
 This project demonstrates how I deployed Jenkins on an Amazon EC2 instance using PuTTY. I’ll walk you through exactly what I did, step by step, using screenshots, and explain everything in simple, beginner-friendly language. I used this project to better understand IAM concepts in a cloud environment, and I now use it to showcase my technical hands-on experience in interviews.
 
 ---
